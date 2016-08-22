@@ -10,7 +10,7 @@ services:
       - POSTGRES_USER=sonar
       - POSTGRES_PASSWORD=sonar
     volumes:
-      - /opt/postgres/data:/var/lib/postgresql/data
+      - ~/docker-volumes/sonardb/data:/var/lib/postgresql/data
 
   sonar:
     image: sonarqube:6.0
@@ -31,7 +31,7 @@ services:
     ports:
       - "8081:8081"
     volumes:
-      - /opt/nexus/:/nexus-data
+      - ~/docker-volumes/nexus/:/nexus-data
 
   jenkins:
     image: jenkins:2.7.2
@@ -40,7 +40,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - /opt/jenkins/:/var/jenkins_home
+      - ~/docker-volumes/jenkins/:/var/jenkins_home
     environment:
       - NEXUS_PORT=8081
       - SONAR_PORT=9000
