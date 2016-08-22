@@ -12,8 +12,8 @@ docker-compose up
 ## Post-installation
 
 ```
-sudo chown 1000 ./jenkins
-sudo chown 200 ./nexus
+sudo chown 1000 ~/docker-volumes/jenkins
+sudo chown 200 ~/docker-volumes/nexus
 ```
 
 ## Accès aux outils
