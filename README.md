@@ -4,8 +4,8 @@ Pour lancer les containers :
 
 ```
 # Clone Repository and startup all docker container
-git clone git@gitlab.com:chronolink/chronolink.docker-ci-stack.git
-cd chronolink.docker-ci-stack.git
+git clone https://gitlab.com/jerome.dumas/docker-ci-stack.git
+cd docker-ci-stack.git
 docker-compose up
 ```
 
