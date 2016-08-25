@@ -49,3 +49,10 @@ services:
       - nexus
       - sonar
 
+  nginx:
+    build: nginx
+    container_name: nginx
+    ports:
+      - "80:80"
+    links:
+      - jenkins:jenkins
