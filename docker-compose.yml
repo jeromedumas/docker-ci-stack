@@ -34,7 +34,7 @@ services:
       - ~/docker-volumes/nexus/:/nexus-data
 
   jenkins:
-    image: jenkins:2.7.2
+    build: ./jenkins
     container_name: jenkins
     restart: always
     ports:
@@ -52,6 +52,7 @@ services:
   nginx:
     build: nginx
     container_name: nginx
+    restart: always
     ports:
       - "80:80"
     links:

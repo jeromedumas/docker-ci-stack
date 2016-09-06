@@ -27,3 +27,12 @@ sudo chown 200 ~/docker-volumes/nexus
 
 > **Attention** : Lors de la première connexion à Jenkins, le mot de passe doit être récupéré depuis les logs.
 
+
+## Mise à jour des containers
+
+```
+# Lancer docker-compose avec une image à jour
+docker-compose rm -f
+docker-compose pull
+docker-compose up --build -d
+```
