@@ -20,10 +20,9 @@ sudo chown 200 ~/docker-volumes/nexus
 
 | *Outils* | *Lien* | *Credentials* |
 | ------------- | ------------- | ------------- |
-| Jenkins | http://localhost/ | no login required |
-| Jenkins | http://${docker-machine ip default}:8080/ | no login required |
-| SonarQube | http://${docker-machine ip default}:9000/ | admin/admin |
-| Nexus | http://${docker-machine ip default}:8081/nexus | admin/admin123 |
+| Jenkins | http://localhost/jenkins | no login required |
+| Sonar | http://localhost/sonar | admin/admin |
+| Nexus | http://localhost/nexus | admin/admin123 |
 
 > **Attention** : Lors de la première connexion à Jenkins, le mot de passe doit être récupéré depuis les logs.
 
