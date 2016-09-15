@@ -6,6 +6,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 COPY assets/etc/nginx/conf.d/*.conf /etc/nginx/conf.d/
 COPY assets/etc/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY assets/usr/share/nginx/html/* /usr/share/nginx/html/
 
 EXPOSE 80 
 EXPOSE 443
